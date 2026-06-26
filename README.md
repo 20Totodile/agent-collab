@@ -45,8 +45,7 @@ Issue tracker 范式，每个任务有类型和阶段流程。
 
 ### 终端面板
 
-<img width="1277" height="637" alt="终端" src="https://github.com/user-attachments/assets/37223f2a-01ec-49f1-9947-dc326b5bb646" />
-
+<img width="1275" height="610" alt="iShot_2026-06-27_00 00 05" src="https://github.com/user-attachments/assets/47726b0b-e7f4-4470-885d-aac8ec5eefcd" />
 
 从 web 端直接看每个 agent 在干什么，支持两种显示模式：
 
