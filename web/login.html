@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>ai-collab</title>
+</head>
+<body>
+<p>Redirecting…</p>
+<script>
+// Auth is now handled server-side (auto-cookie on first /web/* GET). This page only exists
+// to preserve any `?next=` deep link from old bookmarks — strip our own URL params, fall
+// back to the workgroup UI if nothing was passed.
+(function () {
+  const params = new URLSearchParams(location.search)
+  const next = params.get('next')
+  const target = (next && next.startsWith('/')) ? next : '/web/workgroup-v2/index.html'
+  location.replace(target)
+})()
+</script>
+</body>
+</html>
