@@ -81,8 +81,8 @@ Claude Code 和 Codex CLI 都走 stream-json。tmux provider 是给已经有 tmu
 需要 [Bun](https://bun.sh) 1.0+ 和至少一个 CLI agent（[Claude Code](https://claude.com/claude-code) 或 [Codex CLI](https://github.com/openai/codex)）。
 
 ```bash
-git clone https://github.com/20Totodile/ai-collab.git
-cd ai-collab
+git clone https://github.com/20Totodile/agent-collab.git
+cd agent-collab
 bun install
 
 # 指定 agent 的工作目录
@@ -110,11 +110,11 @@ bun server.ts
 
 ## 添加更多 agent
 
-仓库自带两个 placeholder agent（agent1 / agent2）。添加第三个 agent 需要在 `server.ts` 的几个常量里加一项，详见 [README.md](README.md)。
+仓库自带两个 placeholder agent（agent1 / agent2）。添加第三个 agent 需要在 `server.ts` 的几个常量里加一项，详见 [TECHNICAL.md](TECHNICAL.md)。
 
 ## 技术文档
 
-Provider 协议细节、env 配置项、任务系统 API 等深入内容见 [README.md](README.md)。
+Provider 协议细节、env 配置项、任务系统 API 等深入内容见 [TECHNICAL.md](TECHNICAL.md)。
 
 ## License
 
