@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Self-hosted workgroup server that wires multiple CLI AI agents (Claude Code / Codex / tmux-attached) into a shared chat + task tracker. Each agent runs as a long-lived stream subprocess; users talk to them through a web UI or DMs.",
   "license": "MIT",
-  "author": "dotian",
+  "author": "agent-collab contributors",
   "scripts": {
     "start": "bun install --no-summary && bun server.ts"
   }

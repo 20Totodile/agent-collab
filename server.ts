@@ -4138,7 +4138,6 @@ Bun.serve({
         cache_read_input_tokens: usage.cache_read_input_tokens,
         cache_creation_input_tokens: usage.cache_creation_input_tokens,
         cost_usd: usage.cost_usd,
-        // turn_count: null for ai-collab — only main repo tracks brain_loop turn counter for ian/chat.
         // null surfaces the field so consumers can rely on a stable response shape (spec § Acceptance).
         turn_count: null,
       })

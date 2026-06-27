@@ -2,7 +2,12 @@ import path from 'path'
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
 import { randomBytes } from 'crypto'
 
-export const IMG_PORT = Number(process.env.AICOLLAB_PORT || 3009)
+// 2026-06-28: default 3009 -> 3998. Upstream IanApp server defaults to 3009 too;
+// running both on the same Mac means whichever boots first wins :3009 and the
+// other silently takes over when the first dies — exactly what happened on
+// 2026-06-27. Fork now defaults to 3998 (the LAN dev port it already used).
+// Override with AICOLLAB_PORT if you actually want to mirror upstream.
+export const IMG_PORT = Number(process.env.AICOLLAB_PORT || 3998)
 export const SOURCE = 'ai-collab'
 // AUTH_TOKEN resolution order (open-source onboarding without manual setup):
 //   1. AICOLLAB_AUTH_TOKEN env (≥ 16 chars) — explicit, recommended for LAN / tunnel deployments
